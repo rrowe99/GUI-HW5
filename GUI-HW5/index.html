@@ -1,0 +1,61 @@
+<!---
+  Author: Richard Rowe - richard_rowe@student.uml.edu
+  Course: COMP 4610 – GUI I
+  Assignment: HW5 – Scrabble Drag & Drop
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HW5 – Scrabble Drag & Drop</title>
+
+  <!-- jQuery + jQuery UI -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>One-Line Scrabble</h1>
+
+<div id="rack"></div>
+
+<div id="board">
+  <div class="square double-word">
+    <span class="label">DOUBLE<br>WORD</span>
+  </div>
+
+  <div class="square normal"></div>
+
+  <div class="square double-letter">
+    <span class="label">DOUBLE<br>LETTER</span>
+  </div>
+
+  <div class="square normal"></div>
+
+  <div class="square double-letter">
+    <span class="label">DOUBLE<br>LETTER</span>
+  </div>
+
+  <div class="square normal"></div>
+
+  <div class="square double-word">
+    <span class="label">DOUBLE<br>WORD</span>
+  </div>
+</div>
+
+
+
+<div id="controls">
+  <span id="score">Score: 0</span>
+  <button id="submitWord">Play Word</button>
+  <button id="restart">Restart Game</button>
+</div>
+
+<script src="Scrabble_Pieces_AssociativeArray_Jesse.js"></script>
+<script src="scrabble.js"></script>
+
+</body>
+</html>
